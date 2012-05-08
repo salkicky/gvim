@@ -1,0 +1,30 @@
+"===================================
+"
+" Local Settings
+"
+"===================================
+"
+" テーマ
+colorscheme desert
+
+" Font
+set guifont=MS_Gothic:h10:cSHIFTJIS
+
+" 行数
+set number
+
+" ファイルタイプ別設定を有効
+filetype plugin indent on
+
+" Backupファイル設定
+set backup
+set backupdir=%TEMP%
+
+" スワップファイル設定
+set swapfile
+set directory=%TEMP%
+
+" タブ設定
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
