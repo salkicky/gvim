@@ -1,30 +1,38 @@
-"===================================
+"====================================
 "
-" Local Settings
+" User Local Settings
 "
-"===================================
+" update: 2011/11/16
+"====================================
 "
-" テーマ
-colorscheme desert
-
 " Font
-set guifont=MS_Gothic:h10:cSHIFTJIS
+set guifont=MS_Gothic:h9:cSHIFTJIS
+" set guifont=KonatuTohaba:h10:cSHIFTJIS
+" Colorテーマ
+colorscheme desert
+" Clipboardの利用
+set clipboard=unnamed
 
-" 行数
+" BackupFile 
+set backup
+set backupdir=%VIM%\backup
+" SwapFile
+set swapfile
+set directory=%VIM%\backup
+
+" 行番号表示
 set number
 
-" ファイルタイプ別設定を有効
-filetype plugin indent on
-
-" Backupファイル設定
-set backup
-set backupdir=%TEMP%
-
-" スワップファイル設定
-set swapfile
-set directory=%TEMP%
+" 折り返し表示(nowrap:無し  wrap:有り)
+set nowrap
 
 " タブ設定
 set tabstop=4
 set softtabstop=4
-set shiftwidth=4
+
+" Filetype on
+filetype on
+filetype indent on
+
+" ファイルタイプ別設定を有効
+filetype plugin on
