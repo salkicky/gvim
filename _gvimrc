@@ -26,9 +26,13 @@ set number
 " 折り返し表示(nowrap:無し  wrap:有り)
 set nowrap
 
+" インデント幅
+set shiftwidth=4
+
 " タブ設定
 set tabstop=4
 set softtabstop=4
+set expandtab
 
 " Filetype on
 filetype on
