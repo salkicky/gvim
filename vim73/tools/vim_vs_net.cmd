@@ -21,4 +21,15 @@ open
 @rem This allows you to have multiple copies of Vim running, but you can
 @rem control which one has VS files in it.
 @rem
-start /b gvim.exe --servername VS_NET --remote-silent "%1"  "%2"
+
+if "%~2" == "" (GOTO WITHOUT_LINE_NO) else (GOTO WITH_LINE_NO)
+
+:WITH_LINE_NO
+start /b C:\Dev\vim73-kaoriya-win32\gvim.exe --servername VS_NET --remote-silent +%1  %2
+GOTO END
+
+:WITHOUT_LINE_NO
+start /b C:\Dev\vim73-kaoriya-win32\gvim.exe --servername VS_NET --remote-silent %1 
+:GOTO END
+
+:END
