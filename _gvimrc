@@ -13,6 +13,10 @@ colorscheme desert
 " Clipboardの利用
 set clipboard=unnamed
 
+" ウィンドウの大きさ
+set columns=100
+set lines=45
+
 " BackupFile 
 set backup
 set backupdir=%VIM%\backup
