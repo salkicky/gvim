@@ -15,7 +15,7 @@ set clipboard=unnamed
 
 " ウィンドウの大きさ
 set columns=100
-set lines=45
+set lines=80
 
 " BackupFile 
 set backup
